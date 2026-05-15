@@ -70,8 +70,12 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.129 0.042 264.695);
+  --background: oklch(0.99 0.012 90);
+  --foreground: oklch(0.27 0.03 35);
+  --brand-cream: oklch(0.99 0.012 90);
+  --brand-terracotta: oklch(0.652 0.155 40);
+  --brand-teal: oklch(0.4 0.052 210);
+  --brand-sun: oklch(0.785 0.13 60);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.129 0.042 264.695);
   --popover: oklch(1 0 0);
