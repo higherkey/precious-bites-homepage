@@ -1,0 +1,9 @@
+# Precious Bites
+
+> Mini pancake snack cart serving Latino-inspired flavors at farmers markets, festivals, and pop-up events in the San Francisco Bay Area.
+
+Precious Bites is a mobile food cart specializing in fluffy mini pancakes (mini panqueques) topped with dulce de leche, mango con chile, Mexican chocolate, and other flavors inspired by Latino heritage. The cart appears at weekly farmers markets and is available for private event bookings.
+
+## Pages
+
+- [Home](/): Menu, weekly pop-up locations, founder story, and event booking inquiries.
