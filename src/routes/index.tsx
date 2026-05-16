@@ -21,6 +21,61 @@ export const Route = createFileRoute("/")({
       { property: "og:image", content: heroPancakes },
       { name: "twitter:image", content: heroPancakes },
     ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FoodEstablishment",
+          name: "Precious Bites",
+          description:
+            "Mini pancake snack cart serving Latino-inspired flavors at farmers markets, festivals, and pop-up events.",
+          image: "https://precious-bites.lovable.app" + heroPancakes,
+          servesCuisine: ["Latin American", "Mexican", "Desserts"],
+          areaServed: "San Francisco Bay Area",
+          email: "hola@preciousbites.com",
+          url: "https://precious-bites.lovable.app",
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "San Francisco",
+            addressRegion: "CA",
+            addressCountry: "US",
+          },
+          event: [
+            {
+              "@type": "Event",
+              name: "Mission District Farmers Market",
+              startDate: "2026-05-23T09:00",
+              location: {
+                "@type": "Place",
+                name: "Mission District Farmers Market",
+                address: "Mission District, San Francisco, CA",
+              },
+            },
+            {
+              "@type": "Event",
+              name: "Napa Valley Food Festival",
+              startDate: "2026-05-24T11:00",
+              location: {
+                "@type": "Place",
+                name: "Napa Valley Food Festival",
+                address: "Napa Valley, CA",
+              },
+            },
+            {
+              "@type": "Event",
+              name: "Midweek Market",
+              startDate: "2026-05-20T16:00",
+              location: {
+                "@type": "Place",
+                name: "Midweek Market",
+                address: "San Francisco, CA",
+              },
+            },
+          ],
+        }),
+      },
+    ],
   }),
   component: Index,
 });
