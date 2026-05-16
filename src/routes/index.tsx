@@ -244,6 +244,7 @@ function Index() {
       </nav>
 
       {/* Hero */}
+      <main>
       <header
         id="top"
         className="relative px-6 md:px-8 pt-12 pb-24 max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center"
