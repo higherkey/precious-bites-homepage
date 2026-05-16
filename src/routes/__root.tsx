@@ -72,14 +72,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "Precious Bites" },
+      { name: "description", content: "Precious Bites offers delicious mini pancake snacks at events and markets." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "Precious Bites" },
+      { property: "og:description", content: "Precious Bites offers delicious mini pancake snacks at events and markets." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Precious Bites" },
+      { name: "twitter:description", content: "Precious Bites offers delicious mini pancake snacks at events and markets." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/468282da-fbd4-41c0-9bdf-273edd69d2bb" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/468282da-fbd4-41c0-9bdf-273edd69d2bb" },
     ],
     links: [
       {
