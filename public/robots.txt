@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://precious-bites.lovable.app/sitemap.xml
