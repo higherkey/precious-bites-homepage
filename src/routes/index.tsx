@@ -393,7 +393,8 @@ function Index() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-stone-900 text-stone-400 py-16 px-6 md:px-8">
+      </main>
+      <footer className="bg-stone-900 text-stone-300 py-16 px-6 md:px-8">
         <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-10 md:gap-12">
           <div className="col-span-2">
             <h3 className="font-serif text-2xl text-white mb-4 md:mb-6">Precious Bites</h3>
