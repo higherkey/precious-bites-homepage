@@ -21,6 +21,61 @@ export const Route = createFileRoute("/")({
       { property: "og:image", content: heroPancakes },
       { name: "twitter:image", content: heroPancakes },
     ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FoodEstablishment",
+          name: "Precious Bites",
+          description:
+            "Mini pancake snack cart serving Latino-inspired flavors at farmers markets, festivals, and pop-up events.",
+          image: "https://precious-bites.lovable.app" + heroPancakes,
+          servesCuisine: ["Latin American", "Mexican", "Desserts"],
+          areaServed: "San Francisco Bay Area",
+          email: "hola@preciousbites.com",
+          url: "https://precious-bites.lovable.app",
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "San Francisco",
+            addressRegion: "CA",
+            addressCountry: "US",
+          },
+          event: [
+            {
+              "@type": "Event",
+              name: "Mission District Farmers Market",
+              startDate: "2026-05-23T09:00",
+              location: {
+                "@type": "Place",
+                name: "Mission District Farmers Market",
+                address: "Mission District, San Francisco, CA",
+              },
+            },
+            {
+              "@type": "Event",
+              name: "Napa Valley Food Festival",
+              startDate: "2026-05-24T11:00",
+              location: {
+                "@type": "Place",
+                name: "Napa Valley Food Festival",
+                address: "Napa Valley, CA",
+              },
+            },
+            {
+              "@type": "Event",
+              name: "Midweek Market",
+              startDate: "2026-05-20T16:00",
+              location: {
+                "@type": "Place",
+                name: "Midweek Market",
+                address: "San Francisco, CA",
+              },
+            },
+          ],
+        }),
+      },
+    ],
   }),
   component: Index,
 });
@@ -189,6 +244,7 @@ function Index() {
       </nav>
 
       {/* Hero */}
+      <main>
       <header
         id="top"
         className="relative px-6 md:px-8 pt-12 pb-24 max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center"
@@ -337,7 +393,8 @@ function Index() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-stone-900 text-stone-400 py-16 px-6 md:px-8">
+      </main>
+      <footer className="bg-stone-900 text-stone-300 py-16 px-6 md:px-8">
         <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-10 md:gap-12">
           <div className="col-span-2">
             <h3 className="font-serif text-2xl text-white mb-4 md:mb-6">Precious Bites</h3>
